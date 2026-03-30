@@ -1,0 +1,113 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Sticky on a block wrapper — Input’s className lands on inline-flex span, which breaks sticky */
+.search-input-wrap {
+  position: sticky;
+  top: -20px;
+  z-index: 100;
+  margin-bottom: 20px;
+  width: 100%;
+  background: Canvas;
+}
+
+.search-input-wrap .ant-input-affix-wrapper {
+  width: 100%;
+}
+
+.icon-section {
+  margin-top: 20px;
+}
+
+.icons-wrap {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.icon-preview {
+  width: 120px;
+  height: 140px;
+  min-width: 120px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.icon-preview:hover {
+  color: #fff;
+  background: var(--primary-color-4);
+}
+
+.icon-preview .icon {
+  margin-bottom: 10px;
+}
+.icon-preview .icon svg {
+  height: 30px !important;
+  width: 30px !important;
+}
+.icon-preview .name {
+  word-break: break-all;
+  flex: 1;
+}
+.icon-preview .name-bold {
+  opacity: 0.75;
+  font-size: 0.85em;
+  margin-top: 2px;
+}
+.icon-btn {
+  font-size: 24px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.icon-btn:hover {
+  color: #cadbfb;
+}
+
+.icon-preview .actions {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  padding-top: 5px;
+}
